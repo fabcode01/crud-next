@@ -70,7 +70,7 @@ export default function Table(props: TableProps) {
     
 
   return (
-      <table className="table table-zebra">
+      <table className="table table-sm">
 
             {renderizarCabecalho()}
             {renderizarDados()}
