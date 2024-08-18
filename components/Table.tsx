@@ -32,7 +32,7 @@ export default function Table(props: TableProps) {
                     <tr key={cliente.id}
                         className={`${i % 2 === 0 ? 'bg-slate-100' : ''}`}
                     >
-                        <td className="text-purple-800 ">{cliente.id}</td>
+                        <td className="text-purple-800 text-xs">{cliente.id}</td>
                         <td>{cliente.nome}</td>
                         <td>{cliente.idade}</td>
                         {exibirAcoes ? renderizarAcoes(cliente) : false}
@@ -70,7 +70,7 @@ export default function Table(props: TableProps) {
     
 
   return (
-      <table className="table table-sm">
+      <table className="table table-xs md:table-lg">
 
             {renderizarCabecalho()}
             {renderizarDados()}
