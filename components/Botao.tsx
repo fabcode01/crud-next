@@ -5,7 +5,7 @@ interface BotaoProps{
     children: any
     className?: string
     icon?: any
-    onClick?: ()=>void
+    onClick?: () => void
 }
 
 export default function Botao(props: BotaoProps){
